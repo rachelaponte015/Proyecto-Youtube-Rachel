@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #0f0f0f;;
+    color: #f1f1f1;;
+}
+/*-------------- HEADER-------------*/
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    padding: 1px 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navleft{
+    display: flex;
+    align-items: center;
+}
+
+.IconoMenu{
+    padding: 8px;
+}
+
+.IconoYoutube{
+    padding: 18px 14px 18px 16px;
+}
+
+.divCentralNavbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-width: 690px;
+    margin: 0 auto;
+
+
+}
+
+.inputNavbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 40px 0 0 40px;
+    margin-left: 32px;
+    padding: 10px 4px 10px 16px;
+    border: 1px solid hsl(0, 0%, 18.82%);
+    border-right: 0;
+    background-color: hsl(0, 0%, 7%);
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+}
+
+.input:focus{
+    border: 1px solid #1c62b9;
+}
+
+.IconoSearch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7.8px 20px;
+    border: 1px solid hsl(0, 0%, 18.82%);
+    border-left: 0;
+    background-color: hsla(0, 0%, 100%, .08);
+    border-radius: 0 40px 40px 0;
+}
+
+.IconoMicrophone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    margin-left: 12px;
+    background-color: rgba(255,255,255,0.1);
+}
+
+.transparent{
+    background-color: transparent;
+}
+
+.navright{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+}
+
+.UserNavbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    margin: 0 8px;
+    border-radius: 50%;
+}
+
+.IconoUpload, .IconoBell{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    padding: 8px;
+}
+
+/*-------------- CONTENIDO -------------*/
+
+.main-content{
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    width: 100%;
+    gap: 20px;
+}
+/*-------------- SIDEBAR-------------*/
+
+.sidebar {
+   height: calc(100vh - 58px);
+   position: sticky;
+   top: 58px; 
+   overflow-y: auto; 
+}
+
+/* 1. Define el ancho total de la barra de scroll (YouTube usa un tamaño muy delgado) */
+.sidebar::-webkit-scrollbar {
+    width: 11.5px; 
+}
+
+/* 2. El "track" es el carril por donde se desliza. Lo dejamos transparente para que no se vea esa barra blanca */
+.sidebar::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+/* 3. El "thumb" es el indicador arrastrable. Le damos un tono gris translúcido y bordes redondeados */
+.sidebar::-webkit-scrollbar-thumb {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.4); 
+    border-radius: 10px;
+    /* Truco: un borde transparente para que el scroll se vea aún más separado y estilizado */
+    border: 4px solid transparent;
+    background-clip: padding-box; 
+}
+
+/* 4. Cuando el usuario pasa el mouse por encima del menú, el scroll se oscurece un poco para indicar que es interactivo */
+.sidebar::-webkit-scrollbar-thumb:hover {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.4); 
+}
+
+.sidebar-section{
+    padding: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.2)
+}
+
+.sidebar-section li{
+    list-style: none;
+}
+
+.sidebar-section-content{
+    display: flex;
+    width: 100%;
+    max-width: 192px;
+    align-items: center;
+    padding: 8px 0 8px 12px;
+    border-radius: 10px;
+    gap: 24px;
+}
+
+.background-contentSidebar{
+    background-color: rgba(255,255,255,0.1);
+}
+
+.spanSidebar{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.tittle-section{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.section-enlaces-sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 24px;
+}
+
+.section-enlaces-sidebar a{
+    text-decoration: none;
+    margin-right: 8px;
+    font-size: 13px;
+    color: #aaa;
+    font-weight: 500;
+}
+
+.section-enlaces-sidebar p{
+    color: #717171;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/*-------------- SECCION PRINCIPAL -------------*/
+.main-section{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/*-------------- SECCION CATEGORIAS -------------*/
+
+.tagsContainer{
+    position: sticky;
+    top: 58px;
+    left: 0;
+    z-index: 90;
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.list-tags{
+    list-style: none;
+    display: flex;
+    gap: 12px;
+}
+
+.list-tags button{
+    background-color:rgba(255,255,255,0.1);
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/*-------------- SECCION DE VIDEOS -------------*/
+
+.videosContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 16px;
+    padding: 24px 35px 0 0px;
+
+}
+
+.videos{
+    display: grid;
+    grid-row: span 3;
+    grid-template-rows: subgrid;
+    row-gap: 12px;
+}
+
+.div-video{
+    position: relative;
+    width: 100%;
+    background-color: transparent;
+}
+
+.img-videos{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.span-videos{
+    position: absolute;
+    bottom: 8px;   
+    right: 8px;    
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 3px 6px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.content-video{
+    display: flex;
+    flex-direction: row;
+}
+
+.avatar{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.description-video{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.div-description-video{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 4px;
+}
+
+.div-description-video h3{
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(237, 237, 237);
+}
+
+.div-description-video p, span{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(196, 196, 196);
+}
+
+.description-video div{
+    flex-grow: 1;
+}
+
+.vistasVideos{
+    display: flex;
+    gap: 4px;
+}
+
+.description-video button {
+  background: none;
+  border: none;
+  color: white;
+  padding: 4px;
+  border-radius: 50%;
+  display: flex;
+  align-items: start;
+  font-size: 18px;
+}
+
+/*------------Barra de scroll general---------------*/
+
+::-webkit-scrollbar {
+  width: 8px;  /* Ancho del scroll vertical */
+}
+
+/* El fondo por donde se desliza la barra (Track) */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* La barra que se mueve (Thumb / Tirador) */
+::-webkit-scrollbar-thumb {
+  background: #aaaaaa; 
+  border-radius: 10px; 
+  border: 2px solid #0f0f0f; 
+}
