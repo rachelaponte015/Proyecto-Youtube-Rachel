@@ -132,7 +132,6 @@ header{
 .main-content{
     display: flex;
     width: 100%;
-    gap: 20px;
 }
 /*-------------- SIDEBAR-------------*/
 
@@ -236,7 +235,6 @@ header{
 .main-section{
     display: flex;
     flex-direction: column;
-    padding: 0px 16px;
     flex-grow: 1;
     min-width: 0;
 }
@@ -247,7 +245,7 @@ header{
     position: sticky;
     top: 58px;
     z-index: 90;
-    padding: 12px 7px;
+    padding: 12px 18px;
     display: flex;
     align-items: center;
     width: 100%;
@@ -311,7 +309,7 @@ header{
     display: grid;
     flex-direction: column;
     gap: 20px;
-    padding: 8px 3px;
+    padding: 8px 18px;
 }
 
 .videos{
@@ -517,7 +515,7 @@ header{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 16px 8px;
-        padding: 8px 0px 0 0px;
+        padding: 8px 15px 0px;
     }
 }
 
@@ -534,7 +532,6 @@ header{
     .main-content{
         display: grid;
         grid-template-columns: 72px 1fr;
-        gap: 5px;
     }
 
     .sidebar {
@@ -591,11 +588,11 @@ header{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 16px 8px;
-        padding: 8px 10px 0 0px;
+        padding: 8px 20px 0px;
     }
 
     .tagsContainer{
-        padding: 12px 0;
+        padding: 12px 20px;
     }
 
     .list-tags{
@@ -630,7 +627,6 @@ header{
     .main-content{
         display: grid;
         grid-template-columns: 240px 1fr;
-        gap: 8px;
     }
 
     .sidebar{
@@ -685,7 +681,7 @@ header{
     }
 
     .tagsContainer{
-        padding: 12px 0;
+        padding: 12px 20px;
     }
 
     .list-tags{
@@ -696,7 +692,7 @@ header{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 16px 8px;
-        padding: 12px 18px 0 0px;
+        padding: 12px 20px 0px;
     }
 
 }
